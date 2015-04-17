@@ -1,3 +1,4 @@
+
 import java.util.Set;
 import org.junit.Test;
 import junit.framework.TestCase;
@@ -131,8 +132,8 @@ abstract public class SetContractTest extends TestCase {
 		/// Act
 		/// ======================================================================
 		///
-		Integer number1 =  new Number(1);
-		Integer number2 =  new Number(1);
+		Integer number1 =  new Integer(1);
+		Integer number2 =  new Integer(1);
 		set.add( number1 );
 		set.add( number2 );
 
@@ -165,8 +166,8 @@ abstract public class SetContractTest extends TestCase {
 		/// Act
 		/// ======================================================================
 		///
-		Integer number1 =  new Number(1);
-		Integer number2 =  new Number(2);
+		Integer number1 =  new Integer(1);
+		Integer number2 =  new Integer(2);
 		set.add( number1 );
 		set.add( number2 );
 		set.remove( number1 );
