@@ -16,22 +16,30 @@ Clone the Repository
 $> git clone https://github.com/supalogix/java-liskov-example.git
 ```
 
-Change to the test directory
-----------------------------
+Change to the directory
+-----------------------
 
 ```bash
-$> cd java-liskov-example/test
+$> cd java-liskov-example
 ```
+
+Create an output directory for the .class files
+-----------------------------------------------
+
+```bash
+$> mkdir output
+```
+
 Compile all the java files
 --------------------------
 
 ```bash
-$> javac -cp .:../lib/* *.java
+$> javac -d output -cp .:lib/* test/set/*.java test/set/impl/*.java
 ```
 
 Run a test
 ----------
 
 ```bash
-$> java -cp .:../lib/* org.junit.runner.JUnitCore HashSetTest
+$> java -cp .:lib/*:output/* org.junit.runner.JUnitCore HashSetTest
 ```
